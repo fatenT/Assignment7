@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <title>Assignment 07 - Part 5</title>
     <script src="js/dom-practice.js"></script>
+
+    <script>
+        window.document.addEventListener("DOMContentLoaded", init, false);
+        function init() {
+            "use strict";
+            var my_btn = window.document.getElementById("btn_for_head");
+            
+            //Event handler with callback function
+            my_btn.addEventListener("click", function () {
+                alert("I have been clicked");
+            }, false);
+        }
+    </script>
 </head>
 <body>
+    <p>
+        <button onclick="show_msg()">Show Message</button>
+    </p>
+    <p>
+        <button id="msg_btn">Click Here</button>
+    </p>
+    <p>
+        <button id="user_defined_btn">Click Again</button>
+    </p>
+    <p>
+        <button id="callback_btn">Click One More</button>
+    </p>
+    <p>
+        <button id="btn_for_head">Last Click</button>
+    </p>
     
 </body>
 </html>
